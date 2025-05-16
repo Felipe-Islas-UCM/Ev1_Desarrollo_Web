@@ -6,6 +6,16 @@
     --color-accent: #E6A756;
     --color-background: #FDF8F5;
     --color-text: #2C1810;
+
+    /* Border Radius */
+    --border-radius: 8px;
+}
+
+/* Reset y Estilos Base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 /* Estilos generales */
@@ -25,6 +35,11 @@ h4, h5, h6 {
     font-family: 'Lora', serif;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 
 
 /* Header */
@@ -36,5 +51,86 @@ h4, h5, h6 {
 
 .header h1 span {
     color: var(--color-accent);
+}
+
+.hero {
+    padding-top: 80px;
+    display: flex;
+    align-items: center;
+    min-height: 70vh;
+}
+
+.hero-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+    display: flex;
+    align-items: center;
+    gap: 48px;
+}
+
+.hero-content {
+    flex: 1;
+}
+
+.hero-content h2 {
+    font-size: 3.5rem;
+    line-height: 1.2;
+    margin-bottom: 16px;
+    color: var(--color-primary);
+}
+
+.hero-content h2 span {
+    color: var(--color-accent);
+}
+
+.hero-content p {
+    font-size: 1.25rem;
+    margin-bottom: 24px;
+    color: var(--color-text);
+    font-family: 'Lora', serif;
+}
+
+.hero-image-wrapper {
+    position: relative;
+    width: 100%;
+    height: 450px;
+    overflow: hidden;
+    border-radius: var(--border-radius);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.hero-image-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+@media (max-width: 1024px) {
+    .hero-content h2 {
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-container {
+        flex-direction: column;
+        text-align: center;
+        padding-top: 48px;
+    }
+
+    .hero-content h2 {
+        font-size: 2.5rem;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+    }
+
+    .hero-image-wrapper {
+        height: 300px;
+    }
+    
 }
 
