@@ -4,16 +4,88 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Alba Café</title>
-    <link rel="stylesheet" href="estilo.css" />
-    <!-- Importación de fuentes de Google Fonts para mejor tipografía -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,400;0,700;1,400&display=swap"
-      rel="stylesheet"
-    />
-  </head>
+    <!-- Importación de fuentes de Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lora:wght@400;500&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <!-- Estilos CSS -->
+    <link rel="stylesheet" href="estilos.css">
+
+</head>
 
 <body>
-    <h1>Bienvenido a Alba Café</h1>
-    
+    <!-- Header -->
+    <header class="header">
+        <h1>Alba <span>Café</span></h1>
+        
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Descubre el sabor auténtico de <span>Alba</span></h2>
+            <p>Café de especialidad cultivado en las mejores regiones cafetaleras, tostado con pasión y servido con arte.</p>
+        </div>
+        <div class="hero-image">
+            <img src="assets/hero-cafee.jpg" alt="Taza de café Alba">
+        </div>
+    </section>
+
+
+     <!-- Nuestros Cafés -->
+     <section class="cafes">
+        <h2>Nuestros Cafés</h2>
+        <p class="section-description">Descubre la variedad de cafés que tenemos para ofrecerte, cada uno con su propia personalidad y características únicas.</p>
+     </section>
+
+     <!-- Nuestro Compromiso -->
+     <section class="compromiso">
+        <h2>Nuestro Compromiso Alba</h2>
+        <p>En Alba Café, creemos que cada taza de café tiene el poder de crear momentos especiales. Nuestro compromiso es ofrecerte la mejor experiencia de café, desde el origen hasta tu taza.</p>
+     </section>
+
+     <!-- Testimonios -->
+     <section class="testimonios">
+        <h2>Testimonios de nuestros clientes</h2>
+        <div class="testimonio">
+            <img src="assets/testimonio1.jpg" alt="Testimonio 1">
+            <p>"Alba Café se ha convertido en mi parada obligatoria cada mañana. El aroma y sabor de su café es incomparable, y el ambiente acogedor lo convierte en mi lugar favorito."</p>
+            <p class="testimonio-nombre">- María González</p>
+        </div>
+        
+     </section>
+
+      <!-- Footer -->
+    <footer id="contacto" class="footer">
+        <div class="footer-content">
+            <div class="footer-marca">
+                <h3>Alba <span>Café</span></h3>
+                <p>Experiencias de café excepcionales, cultivado con pasión y servido con arte.</p>
+                <div class="footer-redes">
+                    <a href="#" aria-label="Facebook">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                        </svg>
+                    </a>
+                    <a href="#" aria-label="Instagram">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                            <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-contacto">
+                <h4>Contactanos</h4>
+                <p>Email: info@albacafe.com</p>
+                <p>Lunes a Sabado: 9:00 - 18:00</p>
+                <p>Dirección: Calle 123, Talca</p>
+            </div>
+
+            <div class="footer-bottom">
+                <p>© 2025 Alba Café. Todos los derechos reservados.</p>
+            </div>
+                
+        </div>
+    </footer>
 </body>
 </html>
