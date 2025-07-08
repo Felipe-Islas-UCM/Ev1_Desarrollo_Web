@@ -7,6 +7,7 @@
     --color-background: #FDF8F5;
     --color-text: #2C1810;
     --color-shadow: rgba(74, 52, 40, 0.1);
+    --color-hover: #3A2820;
 
     /* Espaciado */
     --spacing-xs: 4px;
@@ -853,4 +854,176 @@ img {
 
 .hero-content, .cafe-card, .feature {
     animation: fadeInUp 1s ease-out forwards;
+}
+
+
+
+
+
+/* Sección Desarrollador */
+.desarrollador {
+    padding: var(--spacing-xxl) var(--spacing-lg);
+    background-color: var(--color-background);
+    margin-top: 80px;
+}
+
+.desarrollador .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.desarrollador h2 {
+    font-size: 3rem;
+    color: var(--color-primary);
+    text-align: center;
+    margin-bottom: var(--spacing-xxl);
+}
+
+.desarrollador-content {
+    display: flex;
+    gap: var(--spacing-xxl);
+    align-items: center;
+    margin-bottom: var(--spacing-xxl);
+}
+
+.desarrollador-info {
+    flex: 1;
+}
+
+.desarrollador-info h3 {
+    font-size: 2.5rem;
+    color: var(--color-primary);
+    margin-bottom: var(--spacing-md);
+}
+
+.desarrollador-titulo {
+    color: var(--color-accent);
+    font-size: 1.2rem;
+    font-family: 'Lora', serif;
+    margin-bottom: var(--spacing-lg);
+}
+
+.desarrollador-descripcion,
+.desarrollador-ubicacion {
+    color: var(--color-text);
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: var(--spacing-lg);
+    opacity: 0.9;
+}
+
+.desarrollador-foto {
+    flex: 1;
+    max-width: 400px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.desarrollador-foto img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.desarrollador-foto:hover img {
+    transform: scale(1.05);
+}
+
+.btn-github {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    padding: var(--spacing-md) var(--spacing-xl);
+    background-color: var(--color-primary);
+    color: white;
+    text-decoration: none;
+    border-radius: var(--border-radius);
+    font-weight: 600;
+    transition: all 0.3s ease;
+    margin-top: var(--spacing-lg);
+}
+
+.btn-github:hover {
+    background-color: var(--color-hover);
+    transform: translateY(-2px);
+}
+
+
+.tecnologias {
+    margin-top: var(--spacing-xxl);
+    text-align: center;
+}
+
+.tecnologias h3 {
+    font-size: 2rem;
+    color: var(--color-primary);
+    margin-bottom: var(--spacing-xl);
+}
+
+.tecnologias-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: var(--spacing-lg);
+    margin-bottom: var(--spacing-xxl);
+}
+
+.tecnologia {
+    background-color: white;
+    padding: var(--spacing-md);
+    border-radius: var(--border-radius);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-weight: 600;
+    color: var(--color-primary);
+    transition: all 0.3s ease;
+}
+
+
+.proyecto-info {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+    font-family: 'Lora', serif;
+    color: var(--color-text);
+    font-size: 1.1rem;
+    line-height: 1.6;
+    opacity: 0.9;
+}
+
+/* Media Queries para la sección Desarrollador */
+@media (max-width: 1024px) {
+    .desarrollador h2 {
+        font-size: 2.5rem;
+    }
+
+    .desarrollador-content {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .desarrollador-foto {
+        max-width: 300px;
+        margin: 0 auto;
+    }
+
+    .btn-github {
+        margin: var(--spacing-lg) auto;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .desarrollador h2 {
+        font-size: 2rem;
+    }
+
+    .desarrollador-info h3 {
+        font-size: 2rem;
+    }
+
+    .tecnologias-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
